@@ -1,0 +1,63 @@
+﻿@using Carcassonne_Web.Models
+@model Carcassonne_Web.Models.ApplicationUser
+
+@{
+    ViewBag.Title = "Profiel";
+}
+
+<h2>Profiel: @Model.UserName</h2>
+
+<div>
+    <hr />
+    <img src="@Model.Avatar?type=large" alt="Avatar" />
+    <br />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+    </dl>
+</div>
+
+<hr />
+<h3>Scores</h3>
+<div id="totalscore"></div>
+<div id="scores"></div>
+<p>
+    @Html.ActionLink("Back to List", "Index") |
+    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#abuseModal">
+        Meld misbruik
+    </button>
+</p>
+
+@Html.Action("GetAbuseModal", "Profile", new { id = Model.Id })
+
+@section Scripts{
+    <script>
+    var globalUserObj = {
+        userId: "@(Model.Id)"
+        };
+    </script>
+    @Scripts.Render("~/bundles/templater")
+    @Scripts.Render("~/Scripts/custom/score.js")
+}

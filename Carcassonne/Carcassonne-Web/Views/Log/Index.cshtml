@@ -1,0 +1,42 @@
+﻿@model PagedList.IPagedList<Carcassonne_Web.Models.Log>
+@using Carcassonne_Web.Models
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Logs</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => new Log().Message)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => new Log().Date)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Message)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @(!ViewBag.viewRelated ? Html.ActionLink("Gerelateerde gebeurtenissen", "RelatedLogs", new {id = item.CategoryAttribute, logType = item.Category}) : Html.ActionLink("Alle logs", "Index"))
+        </td>
+    </tr>
+}
+
+</table>
+
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page }))

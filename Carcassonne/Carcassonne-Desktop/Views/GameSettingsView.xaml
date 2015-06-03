@@ -1,0 +1,58 @@
+﻿<controls:MetroWindow x:Class="Carcassonne_Desktop.Views.GameSettingsView"
+                      x:Name="MainWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      WindowStartupLocation="CenterScreen"
+                      Icon="/Carcassonne-Desktop;component/logo2.ico"
+                      IconBitmapScalingMode="HighQuality" IconEdgeMode="Aliased" ShowIconOnTitleBar="False"
+                      Title="GameSettingsView" Height="600" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="10*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Column="1" Grid.Row="1">
+            <Label Content="Geef een spelersnaam in:" />
+            <TextBox Text="{Binding PlayerName}" />
+            <Label Content="Kies een avatar" />
+            <ListView ItemsSource="{Binding AvatarList}" MaxHeight="150" SelectedItem="{Binding ChosenAvatar}" >
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Image Source="{Binding }" Width="50" Height="50"></Image>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Label Content="Geef aantal gewenste cpu spelers" />
+            <DockPanel VerticalAlignment="Center">
+                <TextBox Text="{Binding ElementName=sliderValue, Path=Value, UpdateSourceTrigger=PropertyChanged}"
+                         DockPanel.Dock="Right" TextAlignment="Right" Width="25" Margin="10 0 0 0" />
+                <Slider
+                    Minimum="1"
+                    Maximum="3"
+                    Value="{Binding AmountOfPlayers}"
+                    TickPlacement="BottomRight"
+                    IsSnapToTickEnabled="True"
+                    Ticks="2,3"
+                    Name="sliderValue" />
+            </DockPanel>
+            <UniformGrid Margin="0 50 0 0" Height="100">
+                <Button Content="Start Game" Margin="5" Command="{Binding GameStartClickedCommand}"
+                        CommandParameter="{Binding ElementName=MainWindow}" />
+                <Button Content="Annuleer" Margin="5" Command="{Binding CancelBtnClickedCommand}"
+                        CommandParameter="{Binding ElementName=MainWindow}" />
+            </UniformGrid>
+
+        </StackPanel>
+    </Grid>
+</controls:MetroWindow>

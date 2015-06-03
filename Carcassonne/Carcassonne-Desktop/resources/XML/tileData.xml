@@ -1,0 +1,877 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<carcassonne>
+  <tile number="4">
+
+      <cloister id="0">
+        <texture>cloister</texture>
+      </cloister>
+      <farm id="1">
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">1</feature>
+      <feature direction="north">1</feature>
+      <feature direction="northNorthEast">1</feature>
+      <feature direction="eastNorthEast">1</feature>
+      <feature direction="east">1</feature>
+      <feature direction="eastSouthEast">1</feature>
+      <feature direction="southSouthEast">1</feature>
+      <feature direction="south">1</feature>
+      <feature direction="southSouthWest">1</feature>
+      <feature direction="westSouthWest">1</feature>
+      <feature direction="west">1</feature>
+      <feature direction="westNorthWest">1</feature>
+      <feature direction="center">0</feature>
+    </direction>
+    <texture>\resources\Tiles\tile13.jpg</texture>
+  </tile>
+
+  <tile number="2">
+
+      <cloister id="0">
+        <texture>cloister</texture>
+      </cloister>
+      <road id="1">
+        <openings>1</openings>
+        <texture>road</texture>
+      </road>
+      <farm id="2">
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">2</feature>
+      <feature direction="north">2</feature>
+      <feature direction="northNorthEast">2</feature>
+      <feature direction="eastNorthEast">2</feature>
+      <feature direction="east">2</feature>
+      <feature direction="eastSouthEast">2</feature>
+      <feature direction="southSouthEast">2</feature>
+      <feature direction="south">1</feature>
+      <feature direction="southSouthWest">2</feature>
+      <feature direction="westSouthWest">2</feature>
+      <feature direction="west">2</feature>
+      <feature direction="westNorthWest">2</feature>
+      <feature direction="center">0</feature>
+    </direction>
+    <texture>\resources\Tiles\tile12.jpg</texture>
+  </tile>
+
+  <tile number="1">
+
+      <city id="0">
+        <openings>4</openings>
+        <flags>1</flags>
+        <texture>city</texture>
+      </city>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">0</feature>
+      <feature direction="east">0</feature>
+      <feature direction="eastSouthEast">0</feature>
+      <feature direction="southSouthEast">0</feature>
+      <feature direction="south">0</feature>
+      <feature direction="southSouthWest">0</feature>
+      <feature direction="westSouthWest">0</feature>
+      <feature direction="west">0</feature>
+      <feature direction="westNorthWest">0</feature>
+      <feature direction="center">0</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile1.jpg</texture>
+  </tile>
+
+  <tile number="3">
+
+      <city id="0">
+        <openings>3</openings>
+        <farm>0</farm>
+        <flags>0</flags>
+        <texture>city</texture>
+      </city>
+      <farm id="1">
+		    <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">0</feature>
+      <feature direction="east">0</feature>
+      <feature direction="eastSouthEast">0</feature>
+      <feature direction="southSouthEast">1</feature>
+      <feature direction="south">1</feature>
+      <feature direction="southSouthWest">1</feature>
+      <feature direction="westSouthWest">0</feature>
+      <feature direction="west">0</feature>
+      <feature direction="westNorthWest">0</feature>
+      <feature direction="center">0</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile3.jpg</texture>
+  </tile>
+
+  <tile number="1">
+
+      <city id="0">
+        <openings>3</openings>
+        <farm>0</farm>
+        <flags>1</flags>
+        <texture>city</texture>
+      </city>
+      <farm id="1">
+		    <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">0</feature>
+      <feature direction="east">0</feature>
+      <feature direction="eastSouthEast">0</feature>
+      <feature direction="southSouthEast">1</feature>
+      <feature direction="south">1</feature>
+      <feature direction="southSouthWest">1</feature>
+      <feature direction="westSouthWest">0</feature>
+      <feature direction="west">0</feature>
+      <feature direction="westNorthWest">0</feature>
+      <feature direction="center">0</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile3B.jpg</texture>
+  </tile>
+
+  <tile number="1">
+
+      <city id="0">
+        <openings>3</openings>
+        <flags>0</flags>
+        <texture>city</texture>
+      </city>
+      <farm id="1">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+      <farm id="2">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+      <road id="3">
+        <openings>1</openings>
+        <texture>road</texture>
+      </road>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">0</feature>
+      <feature direction="east">0</feature>
+      <feature direction="eastSouthEast">0</feature>
+      <feature direction="southSouthEast">1</feature>
+      <feature direction="south">3</feature>
+      <feature direction="southSouthWest">2</feature>
+      <feature direction="westSouthWest">0</feature>
+      <feature direction="west">0</feature>
+      <feature direction="westNorthWest">0</feature>
+      <feature direction="center">0</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile4.jpg</texture>
+  </tile>
+
+  <tile number="2">
+
+      <city id="0">
+        <openings>3</openings>
+        <flags>1</flags>
+        <texture>city</texture>
+      </city>
+      <farm id="1">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+      <farm id="2">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+      <road id="3">
+        <openings>1</openings>
+        <texture>road</texture>
+      </road>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">0</feature>
+      <feature direction="east">0</feature>
+      <feature direction="eastSouthEast">0</feature>
+      <feature direction="southSouthEast">1</feature>
+      <feature direction="south">3</feature>
+      <feature direction="southSouthWest">2</feature>
+      <feature direction="westSouthWest">0</feature>
+      <feature direction="west">0</feature>
+      <feature direction="westNorthWest">0</feature>
+      <feature direction="center">0</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile4B.jpg</texture>
+  </tile>
+
+  <tile number="3">
+
+      <city id="0">
+        <openings>2</openings>
+        <flags>0</flags>
+        <texture>city</texture>
+      </city>
+      <farm id="1">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">1</feature>
+      <feature direction="east">1</feature>
+      <feature direction="eastSouthEast">1</feature>
+      <feature direction="southSouthEast">1</feature>
+      <feature direction="south">1</feature>
+      <feature direction="southSouthWest">1</feature>
+      <feature direction="westSouthWest">0</feature>
+      <feature direction="west">0</feature>
+      <feature direction="westNorthWest">0</feature>
+      <feature direction="center">0</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile8.jpg</texture>
+  </tile>
+
+  <tile number="2">
+
+      <city id="0">
+        <openings>2</openings>
+        <flags>1</flags>
+        <texture>city</texture>
+      </city>
+      <farm id="1">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">1</feature>
+      <feature direction="east">1</feature>
+      <feature direction="eastSouthEast">1</feature>
+      <feature direction="southSouthEast">1</feature>
+      <feature direction="south">1</feature>
+      <feature direction="southSouthWest">1</feature>
+      <feature direction="westSouthWest">0</feature>
+      <feature direction="west">0</feature>
+      <feature direction="westNorthWest">0</feature>
+      <feature direction="center">0</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile8B.jpg</texture>
+  </tile>
+
+  <tile number="3">
+
+      <city id="0">
+        <openings>2</openings>
+        <flags>0</flags>
+        <texture>city</texture>
+      </city>
+      <road id="1">
+        <openings>2</openings>
+        <texture>road</texture>
+      </road>
+      <farm id="2">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+      <farm id="3">
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">2</feature>
+      <feature direction="east">1</feature>
+      <feature direction="eastSouthEast">3</feature>
+      <feature direction="southSouthEast">3</feature>
+      <feature direction="south">1</feature>
+      <feature direction="southSouthWest">2</feature>
+      <feature direction="westSouthWest">0</feature>
+      <feature direction="west">0</feature>
+      <feature direction="westNorthWest">0</feature>
+      <feature direction="center">1</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile9.jpg</texture>
+  </tile>
+
+  <tile number="2">
+
+      <city id="0">
+        <openings>2</openings>
+        <flags>1</flags>
+        <texture>city</texture>
+      </city>
+      <road id="1">
+        <openings>2</openings>
+        <texture>road</texture>
+      </road>
+      <farm id="2">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+      <farm id="3">
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">2</feature>
+      <feature direction="east">1</feature>
+      <feature direction="eastSouthEast">3</feature>
+      <feature direction="southSouthEast">3</feature>
+      <feature direction="south">1</feature>
+      <feature direction="southSouthWest">2</feature>
+      <feature direction="westSouthWest">0</feature>
+      <feature direction="west">0</feature>
+      <feature direction="westNorthWest">0</feature>
+      <feature direction="center">1</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile9B.jpg</texture>
+  </tile>
+
+  <tile number="1">
+
+      <city id="0">
+        <openings>2</openings>
+        <flags>0</flags>
+        <texture>city</texture>
+      </city>
+      <farm id="1">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+      <farm id="2">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">1</feature>
+      <feature direction="north">1</feature>
+      <feature direction="northNorthEast">1</feature>
+      <feature direction="eastNorthEast">0</feature>
+      <feature direction="east">0</feature>
+      <feature direction="eastSouthEast">0</feature>
+      <feature direction="southSouthEast">2</feature>
+      <feature direction="south">2</feature>
+      <feature direction="southSouthWest">2</feature>
+      <feature direction="westSouthWest">0</feature>
+      <feature direction="west">0</feature>
+      <feature direction="westNorthWest">0</feature>
+      <feature direction="center">0</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile6.jpg</texture>
+  </tile>
+
+  <tile number="2">
+
+      <city id="0">
+        <openings>2</openings>
+        <flags>1</flags>
+        <texture>city</texture>
+      </city>
+      <farm id="1">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+      <farm id="2">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">1</feature>
+      <feature direction="north">1</feature>
+      <feature direction="northNorthEast">1</feature>
+      <feature direction="eastNorthEast">0</feature>
+      <feature direction="east">0</feature>
+      <feature direction="eastSouthEast">0</feature>
+      <feature direction="southSouthEast">2</feature>
+      <feature direction="south">2</feature>
+      <feature direction="southSouthWest">2</feature>
+      <feature direction="westSouthWest">0</feature>
+      <feature direction="west">0</feature>
+      <feature direction="westNorthWest">0</feature>
+      <feature direction="center">0</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile6B.jpg</texture>
+  </tile>
+
+  <tile number="2">
+
+      <city id="0">
+        <openings>1</openings>
+        <flags>0</flags>
+        <texture>city</texture>
+      </city>
+      <city id="1">
+        <openings>1</openings>
+        <flags>0</flags>
+        <texture>city</texture>
+      </city>
+      <farm id="2">
+        <neighbor_city>0</neighbor_city>
+        <neighbor_city>1</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">2</feature>
+      <feature direction="east">2</feature>
+      <feature direction="eastSouthEast">2</feature>
+      <feature direction="southSouthEast">2</feature>
+      <feature direction="south">2</feature>
+      <feature direction="southSouthWest">2</feature>
+      <feature direction="westSouthWest">1</feature>
+      <feature direction="west">1</feature>
+      <feature direction="westNorthWest">1</feature>
+      <feature direction="center">2</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile11.jpg</texture>
+  </tile>
+
+  <tile number="3">
+
+      <city id="0">
+        <openings>1</openings>
+        <flags>0</flags>
+        <texture>city</texture>
+      </city>
+      <city id="1">
+        <openings>1</openings>
+        <flags>0</flags>
+        <texture>city</texture>
+      </city>
+      <farm id="2">
+        <neighbor_city>0</neighbor_city>
+        <neighbor_city>1</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">2</feature>
+      <feature direction="east">2</feature>
+      <feature direction="eastSouthEast">2</feature>
+      <feature direction="southSouthEast">1</feature>
+      <feature direction="south">1</feature>
+      <feature direction="southSouthWest">1</feature>
+      <feature direction="westSouthWest">2</feature>
+      <feature direction="west">2</feature>
+      <feature direction="westNorthWest">2</feature>
+      <feature direction="center">2</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile11B.jpg</texture>
+  </tile>
+
+  <tile number="5">
+
+      <city id="0">
+        <openings>1</openings>
+        <flags>0</flags>
+        <texture>city</texture>
+      </city>
+      <farm id="1">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">1</feature>
+      <feature direction="east">1</feature>
+      <feature direction="eastSouthEast">1</feature>
+      <feature direction="southSouthEast">1</feature>
+      <feature direction="south">1</feature>
+      <feature direction="southSouthWest">1</feature>
+      <feature direction="westSouthWest">1</feature>
+      <feature direction="west">1</feature>
+      <feature direction="westNorthWest">1</feature>
+      <feature direction="center">1</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile14.jpg</texture>
+  </tile>
+
+  <tile number="3">
+
+      <city id="0">
+        <openings>1</openings>
+        <flags>0</flags>
+        <texture>city</texture>
+      </city>
+      <road id="1">
+        <openings>2</openings>
+        <texture>road</texture>
+      </road>
+      <farm id="2">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+      <farm id="3">
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">2</feature>
+      <feature direction="east">2</feature>
+      <feature direction="eastSouthEast">2</feature>
+      <feature direction="southSouthEast">2</feature>
+      <feature direction="south">1</feature>
+      <feature direction="southSouthWest">3</feature>
+      <feature direction="westSouthWest">3</feature>
+      <feature direction="west">1</feature>
+      <feature direction="westNorthWest">2</feature>
+      <feature direction="center">1</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile16.jpg</texture>
+  </tile>
+
+  <tile number="3">
+
+      <city id="0">
+        <openings>1</openings>
+        <flags>0</flags>
+        <texture>city</texture>
+      </city>
+      <road id="1">
+        <openings>2</openings>
+        <texture>road</texture>
+      </road>
+      <farm id="2">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+      <farm id="3">
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">2</feature>
+      <feature direction="east">1</feature>
+      <feature direction="eastSouthEast">3</feature>
+      <feature direction="southSouthEast">3</feature>
+      <feature direction="south">1</feature>
+      <feature direction="southSouthWest">2</feature>
+      <feature direction="westSouthWest">2</feature>
+      <feature direction="west">2</feature>
+      <feature direction="westNorthWest">2</feature>
+      <feature direction="center">1</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile15.jpg</texture>
+  </tile>
+
+  <tile number="3">
+
+      <city id="0">
+        <openings>1</openings>
+        <flags>0</flags>
+        <texture>city</texture>
+      </city>
+      <road id="1">
+        <openings>1</openings>
+        <texture>road</texture>
+      </road>
+      <road id="2">
+        <openings>1</openings>
+        <texture>road</texture>
+      </road>
+      <road id="3">
+        <openings>1</openings>
+        <texture>road</texture>
+      </road>
+      <farm id="4">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+      <farm id="5">
+        <texture>farm</texture>
+      </farm>
+      <farm id="6">
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">4</feature>
+      <feature direction="east">1</feature>
+      <feature direction="eastSouthEast">5</feature>
+      <feature direction="southSouthEast">5</feature>
+      <feature direction="south">2</feature>
+      <feature direction="southSouthWest">6</feature>
+      <feature direction="westSouthWest">6</feature>
+      <feature direction="west">3</feature>
+      <feature direction="westNorthWest">4</feature>
+      <feature direction="center">1</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile17.jpg</texture>
+  </tile>
+
+  <tile number="3">
+
+      <city id="0">
+        <openings>1</openings>
+        <flags>0</flags>
+        <texture>city</texture>
+      </city>
+      <road id="1">
+        <openings>2</openings>
+        <textures>road</textures>
+      </road>
+      <farm id="2">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+      <farm id="3">
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">2</feature>
+      <feature direction="east">1</feature>
+      <feature direction="eastSouthEast">3</feature>
+      <feature direction="southSouthEast">3</feature>
+      <feature direction="south">3</feature>
+      <feature direction="southSouthWest">3</feature>
+      <feature direction="westSouthWest">3</feature>
+      <feature direction="west">1</feature>
+      <feature direction="westNorthWest">2</feature>
+      <feature direction="center">1</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile18.jpg</texture>
+  </tile>
+
+  <tile number="8">
+
+      <road id="0">
+        <openings>2</openings>
+        <texture>road</texture>
+      </road>
+      <farm id="1">
+        <texture>farm</texture>
+      </farm>
+      <farm id="2">
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">1</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">2</feature>
+      <feature direction="eastNorthEast">2</feature>
+      <feature direction="east">2</feature>
+      <feature direction="eastSouthEast">2</feature>
+      <feature direction="southSouthEast">2</feature>
+      <feature direction="south">0</feature>
+      <feature direction="southSouthWest">1</feature>
+      <feature direction="westSouthWest">1</feature>
+      <feature direction="west">1</feature>
+      <feature direction="westNorthWest">1</feature>
+      <feature direction="center">0</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile7.jpg</texture>
+  </tile>
+
+  <tile number="9">
+
+      <road id="0">
+        <openings>2</openings>
+        <texture>road</texture>
+      </road>
+      <farm id="1">
+        <texture>farm</texture>
+      </farm>
+      <farm id="2">
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">1</feature>
+      <feature direction="north">1</feature>
+      <feature direction="northNorthEast">1</feature>
+      <feature direction="eastNorthEast">1</feature>
+      <feature direction="east">1</feature>
+      <feature direction="eastSouthEast">1</feature>
+      <feature direction="southSouthEast">1</feature>
+      <feature direction="south">0</feature>
+      <feature direction="southSouthWest">2</feature>
+      <feature direction="westSouthWest">2</feature>
+      <feature direction="west">0</feature>
+      <feature direction="westNorthWest">1</feature>
+      <feature direction="center">0</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile10.jpg</texture>
+  </tile>
+
+  <tile number="4">
+
+      <road id="0">
+        <openings>1</openings>
+        <texture>road</texture>
+      </road>
+      <road id="1">
+        <openings>1</openings>
+        <texture>road</texture>
+      </road>
+      <road id="2">
+        <openings>1</openings>
+        <texture>road</texture>
+      </road>
+      <farm id="3">
+        <texture>farm</texture>
+      </farm>
+      <farm id="4">
+        <texture>farm</texture>
+      </farm>
+      <farm id="5">
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">5</feature>
+      <feature direction="north">5</feature>
+      <feature direction="northNorthEast">5</feature>
+      <feature direction="eastNorthEast">3</feature>
+      <feature direction="east">0</feature>
+      <feature direction="eastSouthEast">3</feature>
+      <feature direction="southSouthEast">3</feature>
+      <feature direction="south">1</feature>
+      <feature direction="southSouthWest">4</feature>
+      <feature direction="westSouthWest">4</feature>
+      <feature direction="west">2</feature>
+      <feature direction="westNorthWest">5</feature>
+      <feature direction="center">1</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile5.jpg</texture>
+  </tile>
+
+  <tile number="1">
+
+      <road id="0">
+        <openings>1</openings>
+        <texture>road</texture>
+      </road>
+      <road id="1">
+        <openings>1</openings>
+        <texture>road</texture>
+      </road>
+      <road id="2">
+        <openings>1</openings>
+        <texture>road</texture>
+      </road>
+      <road id="3">
+        <openings>1</openings>
+        <texture>road</texture>
+      </road>
+      <farm id="4">
+        <texture>farm</texture>
+      </farm>
+      <farm id="5">
+        <texture>farm</texture>
+      </farm>
+      <farm id="6">
+        <texture>farm</texture>
+      </farm>
+      <farm id="7">
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">7</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">4</feature>
+      <feature direction="eastNorthEast">4</feature>
+      <feature direction="east">1</feature>
+      <feature direction="eastSouthEast">5</feature>
+      <feature direction="southSouthEast">5</feature>
+      <feature direction="south">2</feature>
+      <feature direction="southSouthWest">6</feature>
+      <feature direction="westSouthWest">6</feature>
+      <feature direction="west">3</feature>
+      <feature direction="westNorthWest">7</feature>
+      <feature direction="center">1</feature>
+    </direction>
+    <texture>\resources\Tiles\Tile2.jpg</texture>
+  </tile>
+  
+	<tile number="1">
+
+      <city id="0">
+        <openings>1</openings>
+        <flags>0</flags>
+        <texture>city</texture>
+      </city>
+      <road id="1">
+        <openings>2</openings>
+        <texture>straightRoad</texture>
+      </road>
+      <farm id="2">
+        <neighbor_city>0</neighbor_city>
+        <texture>farm</texture>
+      </farm>
+      <farm id="3">
+        <texture>farm</texture>
+      </farm>
+
+    <direction>
+      <feature direction="northNorthWest">0</feature>
+      <feature direction="north">0</feature>
+      <feature direction="northNorthEast">0</feature>
+      <feature direction="eastNorthEast">2</feature>
+      <feature direction="east">1</feature>
+      <feature direction="eastSouthEast">3</feature>
+      <feature direction="southSouthEast">3</feature>
+      <feature direction="south">3</feature>
+      <feature direction="southSouthWest">3</feature>
+      <feature direction="westSouthWest">3</feature>
+      <feature direction="west">1</feature>
+      <feature direction="westNorthWest">2</feature>
+      <feature direction="center">1</feature>
+    </direction>
+    <texture>\resources\Tiles\starttile.jpg</texture>
+  </tile>
+</carcassonne>

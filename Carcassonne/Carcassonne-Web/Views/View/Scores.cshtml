@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Scores";
+}
+
+<h2 id="pageHeader">Scores</h2>
+
+<div id="scores">
+
+</div>
+
+@section Scripts{
+    <script>
+    var globalUserObj = {
+        userId: "@(ViewBag.UserID)"
+        };
+    </script>
+    @Scripts.Render("~/bundles/templater")
+    @Scripts.Render("~/Scripts/custom/scores.js")
+}

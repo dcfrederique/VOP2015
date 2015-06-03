@@ -1,0 +1,61 @@
+﻿@model Carcassonne_Web.Models.ApplicationUser
+
+@{
+    ViewBag.Title = "MaakAdmin";
+}
+
+<h2>Profiel: @Model.UserName</h2>
+
+<div>
+    <hr/>
+    <img src="@Model.Avatar?type=large" alt="Avatar"/>
+    <br/>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @if ((bool) ViewBag.IsBlocked)
+    {
+        @Html.ActionLink("Deblokkeer gebruiker", "Unblock", new {id = Model.Id}, new {@class = "btn btn-success"})
+    }
+    else
+    {
+        @Html.ActionLink("Blokkeer gebruiker", "Block", new {id = Model.Id}, new {@class = "btn btn-danger"})
+    }
+
+    @if ((bool) ViewBag.IsAdmin)
+    {
+        @Html.ActionLink("Ontneem administratorrechten", "SetAdminRights", new {id = Model.Id, role = "Admin", act = "take"}, new {@class = "btn btn-warning"})
+    }
+    else
+    {
+        @Html.ActionLink("Maak administrator", "SetAdminRights", new {id = Model.Id, role = "Admin", act = "give"}, new {@class = "btn btn-warning"})
+    }
+</p>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

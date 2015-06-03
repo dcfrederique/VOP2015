@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Carcassonne_Desktop.Models.Board">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAgAAAAAAAAAAAAAAAAAAIAAgAKCAAAIAAAAAAA=</HashCode>
+      <FileName>Models\Board.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Tiles" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Carcassonne_Desktop.Models.City">
+    <Position X="11.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAQQ=</HashCode>
+      <FileName>Models\Features\City.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Carcassonne_Desktop.Models.Farm">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAQA=</HashCode>
+      <FileName>Models\Features\Farm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Carcassonne_Desktop.Models.Feature">
+    <Position X="8.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAkAggAAAIIEAAAAABAAAEAQAAAAgAAyA=</HashCode>
+      <FileName>Models\Features\Feature.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Carcassonne_Desktop.Models.Monastery">
+    <Position X="13.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACgAAAAAAAAAAgAAQA=</HashCode>
+      <FileName>Models\Features\Monastery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Carcassonne_Desktop.Models.Game">
+    <Position X="1" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEAAAAAAAAAAAAAAAAAAAAAAAAgQAIEAAIAACAAAAA=</HashCode>
+      <FileName>Models\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Board" />
+      <Property Name="NextTile" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Players" />
+      <Property Name="Tiles" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Carcassonne_Desktop.Models.Location">
+    <Position X="6.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Models\Location.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Carcassonne_Desktop.Models.Pawn">
+    <Position X="1.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAwABAQIAAQAAAAA=</HashCode>
+      <FileName>Models\Pawn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Carcassonne_Desktop.Models.Player">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAASAAAAAgAAAAAAAAQAAAAAAAAI=</HashCode>
+      <FileName>Models\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Carcassonne_Desktop.Models.Tile">
+    <Position X="3.25" Y="6.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Carcassonne_Desktop.Models.Tile.Rotation" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Models\Tile.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAFAACAEAAgioAEAAIIRACAAACAgAiBAAMIABAgAggA=</HashCode>
+      <FileName>Models\Tile.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Location" />
+      <Property Name="Pawn" />
+      <Property Name="PawnPosition" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Features" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Carcassonne_Desktop.Models.Road">
+    <Position X="11.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAQA=</HashCode>
+      <FileName>Models\Features\Road.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Carcassonne_Desktop.Models.FeaturePosition">
+    <Position X="6.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ARkAAABAQAAAAAAAAEAQAAAAAAAAAAAEAAAABEAAgQA=</HashCode>
+      <FileName>Models\FeaturePositions.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Carcassonne_Desktop.Models.FeatureType">
+    <Position X="10.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAABAAAAAIAAAAAAAAACAAAEA=</HashCode>
+      <FileName>Models\FeatureType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
